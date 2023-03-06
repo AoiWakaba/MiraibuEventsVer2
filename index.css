@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+body {
+    text-align: center;
+    font-family: 'Catanaran','Noto Sans JP', sans-serif;
+    font-size: 20px;
+    line-height: 10x;
+    color: rgb(20, 126, 175);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    
+}
+header{
+background-color: rgb(253, 255, 255);
+margin: 0%;
+padding: auto;
+text-align: center;
+font-size: 30px;
+}
+
+.Miraibu {
+    margin: 0% 5%;
+    background-color: rgb(249, 248, 242);
+    border-radius: 5px;
+}
+
+.member {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 5px;
+    margin: 0% 5%;
+    height: 50%;
+    text-align: center;
+    font-size: 15px;
+}
+.member img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+ ul {
+    display: flex;
+}
+
+
+
+/*スクロールすると画像が出てくるようにしたい*/
+.eventSec  img{
+    background: linear-gradient(to right, #3b79cc 50%, #42d32d 100%);
+    border-radius: 5px;
+    width: 90%;
+    height: 90%;
+  
+    animation-name: fadeLeftAnime;
+    animation-duration: 0.5d;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
+}
+@keyframes fadeLeftAnime {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .17em;
+    margin-bottom: 10px;
+
+    /*
+    border-radius: 20px;
+    margin: 0 5%;
+    padding: 50px 20px ;
+    text-align: center;
+    font-size: xx-large;
+    vertical-align: middle;
+    */
+}
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* .photos {
+    animation-name: fadeLeftAnime;
+    animation-duration: 0.5d;
+    animation-fill-mode: forwards;
+    opacity: 0;
+ } */
+
+/*イベント画像サイズ*/
+
+
+
+.eventDetailSec h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .17em;
+    margin-bottom: 10px;
+
+}
+
+    .eventDetailSec p img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center 90%;
+    }
+    .eventDetailSec .text {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    .eventDetailSec {
+        margin-bottom: 50px;
+    }
+    .eventDetailSec .photo {
+        margin-bottom: 10px;
+    }
+
+
+
+/*イベント詳細の文字サイズ*/
+
+
+
+ .eventDetailSec {
+    display: grid;
+    grid-template-rows: 180px 180px;
+    grid-template-columns: 40% 60%;
+  }
+  .eventDetailSec h3 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .eventDetailSec .photo {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+  }
+  .eventDetailSec .text {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;\\
+  }
+  .eventtDetailSec .photo img {
+    height: 720px;
+  }
+  .eventtDetailSec h3 {
+    align-self: end;
+  }
+  .eventDetailSec .text {
+    text-align: center;
+    font-size: 16px;
+  }
+  .reverse {
+    grid-template-columns: 60% 40%;
+  }
+  .reverse h3 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .reverse .photo {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+  }
+  .reverse .text {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+
+
+  .menuList li {
+    flex-basis: 22%;
+    margin-bottom: 0;
+  }
+  .menuDetailSec {
+    margin-bottom: 160px;
+  }
+  
